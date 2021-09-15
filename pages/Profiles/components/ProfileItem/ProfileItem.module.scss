@@ -1,0 +1,56 @@
+.trItemWrapper {
+  cursor: pointer;
+}
+.trItemWrapper:hover {
+  background-color: RGBA(86, 61, 124, 0.29);
+}
+.rowItem {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profileTr:hover {
+  background-color: rgba(60, 179, 113, 0.2);
+  cursor: pointer;
+}
+.profileTd {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 15px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.profileTh {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
+  .userTable {
+    border: 0;
+  }
+  .profileTr {
+    border-bottom: 3px solid #35c496;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .profileTd {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0;
+  }
+  .profileTd::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .profileTd:last-child {
+    border-bottom: 0;
+  }
+}

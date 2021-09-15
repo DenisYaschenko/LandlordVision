@@ -1,0 +1,45 @@
+.userTr:hover {
+  background-color: rgba(60, 179, 113, 0.2);
+  cursor: pointer;
+}
+.userTd {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 15px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.userTh {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
+  .userTable {
+    border: 0;
+  }
+  .userTr {
+    border-bottom: 3px solid #35c496;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .userTd {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0;
+  }
+  .userTd::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .userTd:last-child {
+    border-bottom: 0;
+  }
+}

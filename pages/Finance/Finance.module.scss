@@ -1,0 +1,177 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #7bcbd9;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.title {
+  margin-right: auto;
+}
+.inputWrapper {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #563d7c;
+  padding-bottom: 10px;
+}
+.inputLabelActive {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.withdrawWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 50px;
+  width: 50%;
+}
+.about {
+  margin-top: 50px;
+  width: 50%;
+}
+.table {
+  margin-top: 30px;
+}
+.withdrewNavbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.withdrewPopup {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+.withdrewBG {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.4;
+}
+.withdrewNavbarPopup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  background: white;
+  height: 150px;
+  width: 300px;
+  justify-content: center;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.closePopup {
+  top: 13px;
+  right: 13px;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  cursor: pointer;
+}
+.error {
+  position: absolute;
+  font-size: 10px;
+  color: red;
+}
+.btnSuccessDisabled {
+  opacity: 0.4 !important;
+  margin-top: 17px;
+}
+.btnSuccessActive {
+  margin-top: 17px;
+}
+.disabled {
+  opacity: 0.4 !important;
+}
+.financeTable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.financeTr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  margin: 10px;
+}
+.financeTh {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.historyTitle {
+  margin: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .financeTable {
+    border: 0;
+  }
+  .historyTitle {
+    display: block;
+  }
+  .financeThead {
+    display: none;
+  }
+
+  .financeTr {
+    display: block;
+    margin: 0;
+  }
+  .financeTd {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 17px;
+    text-align: right;
+  }
+
+  .financeTd::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .financeTd:last-child {
+    border-bottom: 0;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .withdrawWrapper {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .withdrewNavbar {
+    padding: 10px;
+  }
+  .inputWrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

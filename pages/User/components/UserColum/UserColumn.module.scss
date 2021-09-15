@@ -1,0 +1,35 @@
+.sortImg {
+  position: absolute;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  top: 33%;
+  right: 8px;
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
+.increase {
+  transition: all 0.5s;
+  display: block;
+  height: 15px;
+  width: 15px;
+  top: 33%;
+  right: 8px;
+  transform: rotate(0deg);
+}
+.decrease {
+  display: block;
+  top: 33%;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+.idColumn {
+  padding: 12px !important;
+  padding-right: 23px !important;
+  position: relative;
+  border-right: 2px solid silver;
+  width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

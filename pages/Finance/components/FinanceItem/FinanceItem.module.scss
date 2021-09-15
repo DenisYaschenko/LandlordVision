@@ -1,0 +1,41 @@
+.financeTr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+.financeTh {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
+  .financeTable {
+    border: 0;
+  }
+  .financeTr {
+    margin: 10px;
+  }
+  .financeThead {
+    display: none;
+  }
+  .financeTd {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 14px;
+    text-align: right;
+  }
+  .financeTr {
+    display: block;
+  }
+  .financeTd::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .financeTd:last-child {
+    border-bottom: 0;
+  }
+}

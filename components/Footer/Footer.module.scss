@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #35c496;
+  height: 60px;
+  align-items: center;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: auto;
+}
+a {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+}
+.pageItemActive {
+  color: #10707f;
+}

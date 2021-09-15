@@ -1,0 +1,124 @@
+.inputWrapper {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #563d7c;
+  padding-bottom: 10px;
+}
+.inputWrapperError {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+}
+.inputLabelActive {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.inputLabelActiveError {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  opacity: 0.5;
+}
+.input {
+  border-radius: 2px;
+  border: 1px solid var(--color-standard-white-60);
+  height: 30px;
+  width: 100%;
+  color: var(--color-standard-white-60);
+  font-weight: 100;
+  font-size: 16px;
+  padding: 8px;
+}
+.editProfile {
+  margin: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+.editProfile h3 {
+  font-weight: 300;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.basicInfoHeader {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px var(--color-standard-white-60) solid;
+  margin-bottom: 20px;
+}
+.title {
+  margin-right: auto;
+}
+.submitBtn {
+  width: 100%;
+  max-width: 100px;
+  font-size: 18px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color-standard-white);
+  background-color: var(--color-standard-light-blue-80);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.canselBtn {
+  margin-left: 20px;
+  width: 100%;
+  max-width: 100px;
+  font-size: 18px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color-standard-white);
+  background-color: var(--color-standard-blue-80);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.fullName {
+  display: flex;
+  justify-content: space-between;
+}
+.profileFirstNameField {
+  margin-right: 25px;
+  margin-left: 0;
+  max-width: 375px;
+}
+.profileLastNameField {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 375px;
+}
+.successButton {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .editProfile {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .inputWrapperError {
+    margin-left: 0;
+  }
+  .inputWrapper {
+    margin-left: 0;
+  }
+}
